@@ -1,0 +1,34 @@
+.DownloadVr {
+    display: flex;
+    margin-top: 100px;
+    background: #212224;
+    color: #fff;
+    align-items: center;
+}
+.DownloadVrLeft {
+    width: 45%;
+    padding-left: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+.DownloadVrRight {
+    width: 55%;
+}
+.DownloadVrLeft > h1 {
+    font-size: 3em;
+}
+.DownloadVrLeft > * {
+    margin: 30px 0;
+}
+.DownloadVrRight > img {
+    width: 100%;
+}
+@media screen and (max-width: 500px) {
+    .DownloadVr {
+        flex-direction: column;
+    }
+    .DownloadVr > div {
+        width: 100%;
+    }
+}

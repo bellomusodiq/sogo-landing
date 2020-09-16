@@ -1,0 +1,28 @@
+.Events {
+    margin-top: 100px;
+    padding: 0 1%;
+}
+.EventItems {
+    display: flex;
+    flex-wrap: wrap;
+}
+.EventItem {
+    width: 20%;
+    margin: 30px;
+}
+@media screen and (max-width: 800px) {
+    .EventItem {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .EventItems {
+        flex-direction: column;
+        padding: 5%;
+    }
+    .EventItem {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}

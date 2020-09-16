@@ -1,0 +1,37 @@
+.CountDown {
+    display: flex;
+    justify-content: space-between;
+}
+.CountDownCard {
+    background: #221122;
+    border-radius: 12px;
+    padding: 12px 24px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.CountDownNumber {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+.CountDownLabel {
+    color: #FFC657;
+    font-size: .8em;
+}
+.CountDownHeading {
+    margin: 70px 10px 10px;
+}
+@media screen and (max-width: 1336px) {
+    .CountDownCard {
+        width: 70px;
+        padding: 10px;
+    }
+    .CountDownNumber {
+        font-size: 1em;
+    }
+    .CountDownLabel {
+        font-size: .6em;
+    }
+}

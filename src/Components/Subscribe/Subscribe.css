@@ -1,0 +1,75 @@
+.Subscribe {
+    margin-top: 100px;
+    display: flex;
+    padding: 0 5%;
+}
+.SubscribeLeft {
+    flex: 1;
+    z-index: 2;
+}
+.SubscribeLeft > img {
+    margin-left: 100px;
+    width: 100%;
+}
+.SubscribeRight {
+    width: 40%;
+    background: black;
+    color: white;
+    padding: 5%;    
+    border-radius: 25px;
+}
+.SubscribeRight > h1 {
+    width: 75%;
+    font-size: 3em;
+}
+.SubscribeRight > form {
+    display: flex;
+    flex-direction: column;
+}
+.SubscribeRight > form > * {
+    /* margin: 30px 0; */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7.5px;
+}
+.SubscribeRight > form > input {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.21);
+    color: white;
+}
+.SubscribeRight button {
+    cursor: pointer;
+    margin-top: 30px;
+}
+@media screen and (max-width: 800px) {
+    .Subscribe {
+        padding: 0 2%;
+    }
+    .SubscribeLeft > img {
+        margin-left: 50px;
+    }
+    .SubscribeRight {
+        width: 55%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Subscribe {
+        flex-direction: column;
+    }
+    .Subscribe > div {
+        width: 100%;
+    }
+    .SubscribeLeft > img {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .SubscribeRight > h1 {
+        font-size: 2em;
+    }
+    .SubscribeRight {
+        padding-bottom: 50px;
+    }
+    .SubscribeRight button {
+        background: white;
+    }
+}

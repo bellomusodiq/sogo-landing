@@ -1,0 +1,101 @@
+.Features {
+    margin-top: 100px;
+    padding: 0 5%;
+}
+.FeaturesTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.FeaturesTop > div {
+    width: 48%;
+}
+.FeatureTopLeft > img {
+    width: 100%;
+}
+.FeatureButton {
+    background: #000000;
+    border: none;
+    border-radius: 17px;
+    padding: 10px 40px;
+    color: #fff;
+}
+.FeatureTopRight > * {
+    margin: 10px 0;
+}
+.FeatureBullet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: flex-start;
+}
+.FeatureBullet > img {
+    width: 10%;
+}
+.FeatureBullet > div {
+    width: 80%;
+}
+.FeatureBullet > div > h5 {
+    margin-bottom: 10px;
+}
+.FeaturesBottom {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FeatureBottomLeft {
+    width: 40%;
+}
+.FeatureBottomRight {
+    width: 55%;
+    display: flex;
+}
+.VrBackground {
+    height: 500px;
+    background: #FFC657;
+    width: 80%;
+}
+.FeatureBottomRight > div:last-of-type {
+    flex: 1;
+}
+.VrBackground > img {
+    width: 100%;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.FeatureBottomLeft > * {
+    margin: 25px 0;
+}
+@media screen and (max-width: 800px) {
+    .FeaturesTop {
+        align-items: flex-start;
+    }
+    .VrBackground {
+        height: 270px;
+    }
+    .FeatureTopRight > h1 {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 500px) {
+    .FeaturesTop {
+        flex-direction: column;
+    }
+    .FeaturesTop > div {
+        width: 100%;
+    }
+    .FeaturesBottom {
+        flex-direction: column;
+    }
+    .FeaturesBottom > div {
+        width: 100%;
+    }
+    .VrBackground {
+        margin-top: 50px;
+        height: 250px;
+    }
+    .VrBackground > img {
+        margin-top: -20px;
+    }
+}

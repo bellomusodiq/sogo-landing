@@ -1,0 +1,130 @@
+.Header {
+    display: flex;
+    align-items: stretch;
+}
+.HeaderLeft {
+    padding: 5% 10% 0 10%;
+    width: 50%;
+}
+.HeaderLeft > h1 {
+    font-size: 56px;
+}
+.HeaderLeft > p {
+    margin: 40px 0;
+}
+.HeaderRight {
+    background: linear-gradient(212.72deg, #031741 4.79%, #212224 97.03%);
+    width: 50%;
+}
+.HeaderRightBackg {
+    background-image: url('../../assets/images/header-right-backg.png');
+    min-height: 600px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.Stores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Stores > img {
+    margin: 0 20px;
+}
+.HeaderRightBackg > img {
+    position: relative;
+    top: 40px;
+    right: 30%;
+}
+.DownloadNowButton {
+    background: #FFC657;
+    border: none;
+    border-radius: 4px;
+    width: fit-content;
+    padding: 10px 20px;
+    position: relative;
+    top: 30px;
+    left: 45%;
+}
+@media screen and (max-width: 1336px) {
+    .Header {
+        width: 100%;
+    }
+    .HeaderRightBackg {
+        /* height: 400px; */
+        width: 100%;
+    }
+    .HeaderLeft {
+        padding: 5%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .HeaderLeft > h1 {
+        font-size: 30px;
+    }
+    .HeaderRightBackg {
+        height: 300px;
+    }
+    .HeaderRightBackg > img {
+        height: 300px;
+    }
+    .Stores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .Stores > img {
+        margin: 5px 0;
+    }
+}
+.HeaderRightBackg > h1, .HeaderRightBackg > p, .LogoDownload {
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .HeaderLeft {
+        display: none;
+    }
+    .HeaderRight {
+        width: 100%;
+        padding-top: 30px;
+        background: black;
+    }
+    .DownloadNowButton {
+        display: none;
+    }
+    .HeaderRightBackg {
+        padding: 5%;
+    }
+    .HeaderRightBackg > h1, .HeaderRightBackg > p {
+        display: block;
+    }
+    .HeaderRightBackg > h1 {
+        color: #FFC657;
+        margin-top: 20px;
+    }
+    .HeaderRightBackg > p {
+        color: #fff;
+        width: 75%;
+        margin-top: 50px;
+    }
+    .MobileDownloadNowButton {
+        background: #FFC657;
+        border: none;
+        border-radius: 4px;
+        width: fit-content;
+        padding: 10px 20px;
+    }
+    .LogoDownload {
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .HeaderRightBackg {
+        height: 350px;
+    }
+    .HeaderRightBackg > img {
+        position: inherit;
+        margin: 0;
+        margin-top: 30px;
+    }
+}

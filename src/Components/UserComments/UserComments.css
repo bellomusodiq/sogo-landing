@@ -1,0 +1,26 @@
+.UserComments {
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    width: 80%;
+}
+.Comments {
+    display: flex;
+    margin-top: 70px;
+}
+.Comment > p {
+    margin-bottom: 50px;
+}
+.Comment> img {
+    border-radius: 50%;
+}
+@media screen and (max-width: 800px) {
+    .UserComments {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .UserComments {
+        display: none;
+    }
+}
